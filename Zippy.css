@@ -1,0 +1,454 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  width: 100%;
+  height: 100vh;
+  font-family: sans-serif;
+}
+#nav-bar{
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+.navbar{
+  background-color: black;
+  padding: 0 !important;
+}
+.navbar-brand img{
+  height: 55px;
+  width: 150px;
+  padding-left: 20px;
+}
+.navbar-nav li{
+  padding: 0 10px;
+}
+.navbar-nav li a{
+  color: #fff !important;
+  font-weight: 600;
+  float: center;
+  text-align: center;
+}
+.fa-bars{
+  color: #fff;
+  font-size: 30px !important;
+}
+
+/*----------------------------------------Slider-box1----------------------------------------- */
+.carousel-item{
+  height: 43.7em;
+  color: #fff;
+  position: relative;
+  background-position: center;
+  background-size: cover;
+  margin-top: 3%;
+}
+.container{
+  position: relative;
+  bottom: 400px;
+  top: 80px;
+  left: 20px;
+  right: 0;
+}
+.container h2{
+  margin: 10px 20px;
+}
+.container p{
+  margin: 10px 20px;
+  padding-top: 10px;
+}
+.container .btn{
+  margin: 20px;
+  color: white;
+  background-color: red;
+  border-color: red;
+  font-size: medium;
+}
+.container .btn:hover{
+  color: white;
+  background-color: rgb(241, 35, 35);
+  border-color: rgb(241, 35, 35);;
+}
+
+/*----------------------------------------Welcome-Section----------------------------------------- */
+#welcome{
+  padding: 1px 0;
+}.welcome-img{
+  width: 100px;
+  margin-top: 20px;
+  height: 100px;
+}
+.welcome{
+  padding: 20px;
+}
+.welcome-row{
+  margin-top: 2%;
+  display: flex;
+}
+.img{
+  width: 200px;
+  height: 200px;
+}
+.line-1{
+  width: 1100px;
+  height: 2px;
+  background: gray;
+  display: inline-block;
+}
+
+/*----------------------------------------Project----------------------------------------- */
+#projects{
+  width: 100%;
+  text-align: center;
+  margin-top: 3%;
+  margin-bottom: 0.1em;
+}
+.projects-row{
+  margin-top: 1%;
+  display: flex;
+}
+.projects-col{
+  flex-basis: 20%;
+  background: rgb(199, 198, 198);
+  border-radius: 10px;
+  margin-left: 6px;
+  margin-top: 2%;
+  padding: 20px 12px;
+  box-sizing: border-box;
+  transition: 0.5s;
+}
+.projects-col h4{
+  color: black;
+  margin-top: 10px;
+}
+.projects-col p{
+  color: rgb(61, 60, 60);
+}
+.projects-col .btn{
+  color: white;
+  background-color: red;
+  font-size: medium;
+  border-color: red;
+}
+.projects-col .btn:hover{
+  color: white;
+  background-color: rgb(241, 35, 35);
+  border-color: rgb(241, 35, 35);;
+}
+.projects-col:hover{
+  box-shadow: 0 0 20px 0 rgba(0,0,0,0.8);
+}
+
+/*----------------------------------------Pricing Table----------------------------------------- */
+.pricing-row{
+  display: flex;
+  margin-top: 3%;
+}
+.line-2{
+  position: absolute;
+  display: inline-block;
+  margin: 0 450px;
+  border-left: 5px solid #ccc;
+  height: 260px;
+}
+.line-3{
+  position: absolute;
+  display: inline-block;
+  margin: 0 870px;
+  border-left: 5px solid #ccc;
+  height: 260px;
+}
+
+/*----------------------------------------Video-Projects----------------------------------------- */
+#video-projects{
+  background-color: black !important;
+}
+.videos-row{
+  display: flex;
+  margin-top: 3%;
+}
+.containers{
+  margin-top: 7%;
+  margin-left: 5%;
+}
+.containers h1{
+  padding-top: 15spx;
+  color: white;
+  margin: 20px 0px 50px 0px !important; 
+}
+.play-btn{
+  width: 50px;
+  position: relative;
+  top: 5%;
+  right: 44%;
+  cursor: pointer;
+  transition: 0.5s;
+  opacity: 0;
+}
+.containers .col-md-4:hover .play-btn{
+  opacity: 1;
+}
+.modal-content{
+  background: transparent !important;
+  border: none !important;
+}
+
+/*----------------------------------------zippy-team----------------------------------------- */
+.team-container{
+  margin-top: 2%;
+}
+.team-row1{
+  margin-top: 3%;
+  display: flex;
+}
+.team-row1 p1{
+  color: grey;
+}
+.team-row2{
+  margin-top: 3%;
+  display: flex;
+}
+.team-row2 p1{
+  color: grey;
+}
+.circular-square{
+  border: 1px solid black;
+  border-radius: 50%;
+}
+
+/*--------------------------------------life-in-zippy----------------------------------------- */
+.lifeInZippy-container {
+  width: 90%;
+  height: 110vh;
+  margin: 30px auto;
+  position: relative;
+  background: rgb(199, 198, 198);
+}
+.lifeInZippy-container h1{
+  padding-top: 3%;
+}
+.slider-box {
+  width: 90%;
+  max-height: 90vh;
+  position: relative;
+  overflow: hidden;
+  margin: 30px auto;
+}
+#slider {
+  width: 100%;
+  display: inline-flex;
+  transition: 0.7s;
+}
+#slider img {
+  width: 100%;
+}
+.indicators {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+.indicators span {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: rgba(11, 235, 235, 0.781);
+  cursor: pointer;
+}
+
+/*--------------------------------------newsletter-signup----------------------------------------- */
+.newsletter-container {
+  background: url(images/NL1.jpg) no-repeat center;
+  background-size: cover;
+  padding: 100px 40px;
+  text-align: center;
+  color: black;
+}
+.newsletter-container p {
+ max-width: 800px;
+ margin: 40px auto;
+ font-size: 20px;
+ font-weight: 300;
+}
+.email-box {
+  height: 40px;
+  display: flex;
+  justify-content: center;
+}
+.email-box i {
+ background: #2f3542;
+ width: 40px;
+ line-height: 40px;
+}
+.tbtn .subscribe-btn {
+  border: none;
+  outline: none;
+}
+.tbox {
+  width: 0px;
+  transition: 0.6s;
+}
+.email-box:hover > .tbox,.subscribe-btn:focus {
+  width: 260px;
+  padding: 0 10px;
+}
+.subscribe-btn {
+  background: #2f3542;
+  color: white;
+  padding: 0 10px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+/*--------------------------------------blog----------------------------------------- */
+.blog-row {
+  display: flex;
+  margin-top: 3%;
+}
+.blog-row p2 {
+  color: grey;
+}
+.blog-row p {
+  max-width: 400px;
+}
+
+/*--------------------------------------contact-us----------------------------------------- */
+#contact-in {
+  width: 100%;
+  height: auto;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 10px;
+  background: rgb(199, 198, 198);
+}
+.contact-map {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+}
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+.contact-form {
+  width: 100%;
+  height: auto;
+  flex: 50%;
+  padding: 30px;
+  text-align: center;
+}
+.contact-form h1 {
+  margin-bottom: 10px;
+}
+.contact-form-txt {
+  width: 100%;
+  height: 40px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 50px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-txt::placeholder {
+  color: #aaa;
+}
+.contact-form-textarea {
+  width: 100%;
+  height: 130px;
+  color: #000;
+  border: 1px solid #bcbcbc;
+  border-radius: 10px;
+  outline: none;
+  margin-bottom: 20px;
+  padding: 15px;
+}
+.contact-form-textarea::placeholder {
+  color: #aaa;
+}
+.contact-form-btn {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 50px;
+  background: rgb(5, 176, 243);
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 0;
+  cursor: pointer;
+  font-size: 18px;
+}
+.contact-form-btn:hover {
+  background: rgb(60, 190, 241);
+  border-color: rgb(60, 190, 241);
+}
+
+/*--------------------------------------footer----------------------------------------- */
+.footer {
+  background: black;
+  height: auto;
+  width: 100vw;
+  font-family: "Open sans";
+  padding-top: 40px;
+  color: #fff;
+  margin-top: 3%;
+}
+.footer-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.footer-content img {
+  height: 50px;
+  width: 100px;
+  cursor: pointer;
+}
+.footer-content p {
+  max-width: 500px;
+  margin: 10px auto;
+  line-height: 28px;
+  font-size: 14px;
+}
+.socials {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 1rem 0 3rem 0;
+}
+.socials li {
+  margin: 0 10px;
+}
+.socials li:hover a {
+  color: red;
+}
+.socials a {
+  text-decoration: none;
+  color: #fff;
+}
+.socials a i {
+  font-size: 1.1rem;
+  transition: color .4s ease;
+}
+.footer-bottom {
+  background: black;
+  width: 100vw;
+  padding: 20px 0;
+  text-align: center;
+}
+.footer-bottom p {
+  font-size: 14px;
+  word-spacing: 2px;
+  text-transform: capitalize;
+}
+.footer-bottom span {
+  opacity: .4;
+  font-weight: 200;
+}
+
